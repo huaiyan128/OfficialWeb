@@ -24,17 +24,17 @@ module.exports = {
       query: {
         presets: ['es2015', 'react', 'stage-0']
       }
-    },{
+    }, {
       test: /\.css$/,
       loader: 'style!css'
     }, {
-     test: /\.less$/,
+      test: /\.less$/,
       loader: 'style-loader!css-loader!less-loader'
-    },{ 
-     test: /\.(png|jpg)$/,
+    }, {
+      test: /\.(png|jpg)$/,
       loader: 'url-loader?limit=25000'
     }
-    
+
     ]
   },
   resolve: {
@@ -44,12 +44,12 @@ module.exports = {
     contentBase: path.join(__dirname, "/dist"),
     compress: true,
     historyApiFallback: true,
-    port: 2354
+    port: 6658
   },
   devtool: 'source-map',
-  plugins:[
+  plugins: [
     new HtmlWebpackPlugin({
-      template:'./app/index.html'
+      template: './app/index.html'
     })
   ]
 };
