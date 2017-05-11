@@ -13,7 +13,8 @@
   "author": "Zaki_Ko",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-spritesmith": "^0.3.3"
   },
   "dependencies": {
     "babel-cli": "^6.24.1",
